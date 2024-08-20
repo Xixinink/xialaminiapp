@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#29273c"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 二楼效果的ViewPager -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:orientation="vertical" />
+    <!-- 自定义动画头部 -->
+    <com.xiala.wx.ExpendPointView
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <!-- 底部四个按钮的导航栏 -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#DBDBDB">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导航栏"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</FrameLayout>
