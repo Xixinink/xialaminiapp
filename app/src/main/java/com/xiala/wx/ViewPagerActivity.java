@@ -19,14 +19,13 @@ public class ViewPagerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        //对状态栏和导航栏进行设置
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twolevel);
         ImmersionBar.with(this).statusBarDarkFont(true).init();
-
-        // 设置导航栏为透明
+        
         getWindow().setNavigationBarColor(Color.TRANSPARENT);
-
+        getSupportActionBar().hide();
         getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
                         View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
