@@ -7,4 +7,4 @@
 # 联系方式
 QQ群：141814440
 </br>
-QQ频道：https://pd.qq.com/s/dro8z6iu7
+QQ频道：https://pd.qq.com/s/fvfdt6h0g
